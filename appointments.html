@@ -25,7 +25,6 @@
 
       ga('create', 'UA-89520472-1', 'auto');
       ga('send', 'pageview');
-
     </script>
 
 </head>
@@ -38,10 +37,10 @@
     </div>
         <!-- NAVBAR -->
         <div class="row center valign-wrapper" style="background-color:white;">
-            <div class="col s3 m3 l3 valign center-align text-flow"><a href="aboutus.html" class="grey-text text-darken-3" style="font-family:Avenir">Our Team</a></div>
-            <div class="col s3 m3 l3 valign center-align text-flow"><a href="appointments.html" class="grey-text text-darken-3" style="font-family:Avenir">Book An Appointment</a></div>
-            <div class="col s3 m3 l3 valign center-align text-flow"><a href="services.html" class="grey-text text-darken-3" style="font-family:Avenir">Services</a></div>
-            <div class="col s3 m3 l3 valign center-align text-flow"><a href="jobs.html" class="grey-text text-darken-3" style="font-family:Avenir">Jobs</a></div>
+            <div class="col s3 m3 l3 valign center-align"><a href="aboutus.html" class="grey-text text-darken-3" style="font-family:Avenir">Our Team</a></div>
+            <div class="col s3 m3 l3 valign center-align"><a href="appointments.html" class="grey-text text-darken-3" style="font-family:Avenir">Book An Appointment</a></div>
+            <div class="col s3 m3 l3 valign center-align"><a href="services.html" class="grey-text text-darken-3" style="font-family:Avenir">Services</a></div>
+            <div class="col s3 m3 l3 valign center-align"><a href="jobs.html" class="grey-text text-darken-3" style="font-family:Avenir">Jobs</a></div>
         </div>
 
         <!-- MOBILE -->
@@ -75,112 +74,76 @@
     <!--       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
     <!-- /HEADER -->
 
-    <!-- CONTENTS -->
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br><br>
-                <!-- animated text-->
-                <h5 class="header center white-text text-lighten-2 animated zoomIn" style="animation-delay: 0.7s;animation-duration:1.4s">Experienced doctors providing comprehensive healthcare to Bendigo since 2008.</h1>
-        <br><br>
-        <!-- SPACE -->
+<!-- CONTENTS -->
 
-        <!-- CALL BUTTON -->
-        <div class="row center" style="padding-bottom:2em">
-          <a class="waves-effect waves-light btn-large blue z-depth-5" id="callUsButton" onClick="callUs()"><i class="material-icons left">call</i>Call Us To Book</a>
-          <script>
-            function callUs() {
-              location.href = "tel:0354440689";
-              ga('send', 'event', 'Calls', 'Click on Call Button [home]');
-              console.log("Call Button Activated");
-            }
-          </script>
-        </div>
-        <!-- /CALL BUTTON -->
-
+  <!-- PARALLAX -->
+  <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+          <div class="container">
+              <br><br>
+                <div class="row center">
+                    <h5 class="header center white-text text-lighten-2">Book an appointment.</h1>
+                </div>
+               <div class="row center"><p class="flow-text white-text">Please phone <b style="color:white">03 5444 0689</b> during business hours for an appointment. We make every effort to accommodate your preferred time and GP. If you feel you may require a long consultation, please let staff know and they will be happy to book a double appointment.</p></div>
+               <div class="row center"></div>
+               <!-- CALL BUTTON -->
+               <div class="row center">
+                 <a class="waves-effect waves-light btn-large blue z-depth-5" id="callUsButton" onClick="callUs()"><i class="material-icons left">call</i>Call Us To Book</a>
+                 <script>
+                   function callUs() {
+                     location.href = "tel:03 5444 0689";
+                     ga('send', 'event', 'Calls', 'Click on Call Button [appointments.html]');
+                     console.log("Call Button Activated");
+                   }
+                 </script>
+               </div>
+              <br><br>
+          </div>
       </div>
+      <div class="parallax"><img src="img/bookingappointment.jpg" alt="Make an appointment at our medical clinic in Bendigo."></div>
     </div>
-    <div class="parallax animated fadeIn" style="animation-delay:0.7s;animation-duration:3s"><img src="img/flower.jpg" alt="Unsplashed background img 1"></div>
-  </div>
 
-  <div class="row animated zoomIn" style="animation-delay: 1.6s; animation-duration:2s;">
-      <!--   Icon Section   -->
-        <div class="col s12 m6 l4">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="img/about2.jpg">
-              <span class="card-title">About Us</span>
-            </div>
-            <div class="card-content">
-              <p class="flow-text">Breen St Medical Clinic is a fully accredited medical practice, emphasizing the best care for our patients. Our General Practitioners (GP) and healthcare staff provide high quality patient-centered care for the Bendigo and Quarry Hill region.  </p>
-            </div>
-            <div class="card-action blue waves-effect wave-light" style="width:100%" onclick="openAboutUs()">
-              <a href="aboutus.html" style="color:white">Find out more about us</a>
-              <script>
-                  function openAboutUs() {
-                    location.href = "aboutus.html";
-                  }
-              </script>
-            </div>
+<!-- MAKE AN APPOINTMENT -->
+<div class="container">
+<div class="row center">
+<p class="flow-text" style="text-align:justify">We also offer a <b>after-hours service</b> for patients outside of normal business hours through the National Home Doctor Service, during weekdays between 6:00pm - 8:00am, Sturdays from midday all day Sunday, and Public holidays. <br><br><b>Home visits</b> are available for regular patients with a condition preventing them from attending the clinic. </p>
+<br>
+<div class="col s4 m4 l4 flow-text">
+    <i class="large material-icons blue" style="color:white">perm_identity</i>
+    <h4 class="flow-text"><b>Opening Hours</b></h4>
+    <p>Monday-Friday, 9:00am - 5:00pm</p>
+    <p>Contact the after-hours service for times outside these operating hours.</p>
+</div>
+<div class="col s4 m4 l4 flow-text">
+  <i class="large material-icons green" style="color:white">perm_phone_msg</i>
+    <h4 class="flow-text"><b>Contact Us</b></h4>
+    <ul>
+        <li><a class="black-text" href="#!"><i>Business hours:</i> <br>03 5444 0689</a></li><br>
+        <li><a class="black-text" href="#!"><i>After hours service:</i> 137 425</a></li><br>
+        <li><a class="black-text" href="#!"><i>Fax:</i> 03 5444 1315</a></li><br>
+        <li><a class="black-text" href="#!"><i>Location:<br> </i>64 Breen Street, Quarry Hill VIC 3550</a></li>
+    </ul>
+</div>
+<div class="col s4 m4 l4 flow-text">
+  <i class="large material-icons red" style="color:white">announcement</i>
+    <h4 class="flow-text"><b>Emergency?</b></h4>
+    <p>Call 000 for an ambulance for immediate assistance.</p>
+</div>
+</div>
+</div>
 
-          </div>
-      </div>
-
-      <!--   Icon Section   -->
-        <div class="col s12 m6 l4">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="img/appointment.jpg">
-              <span class="card-title">Book An Appointment</span>
-            </div>
-            <div class="card-content">
-              <p class="flow-text">We are open from <b>Monday to Friday 9:00am - 5:00pm</b>. Outside of these hours, we also offer an <b>after-hours services</b> during weekdays between 6:00pm-8:00am, Saturdays from midday, and all day Sunday and public holidays: call <a href="tel:137 425">137 425</a> for this service.</p>
-            </div>
-            <div class="card-action orange waves-effect wave-light" style="width:100%" onclick="openBookNow()">
-              <a href="tel:5444 0689" style="color:white">Book now (03 5444 0689)</a>
-              <script>
-                  function openBookNow() {
-                    location.href = "tel:03 5444 0689";
-                    ga('send', 'event', 'Calls', 'Click on Book Now Button [home]');
-                    console.log("Book Now Button Activated");
-                  }
-              </script>
-            </div>
-          </div>
-      </div>
-
-      <!--   Icon Section   -->
-        <div class="col s12 m6 l4">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="img/services.jpg">
-              <span class="card-title">Our services</span>
-            </div>
-            <div class="card-content">
-              <p class="flow-text">Our practice has many services to offer, inluding: general medical care, skin cancer checks, BP monitoring, glucose testing, antenatal/postnatal care, immunisations, and more.</p>
-            </div>
-            <div class="card-action green waves-effect wave-light" style="width:100%" onclick=openServices()>
-              <a href="services.html" style="color:white">See what we offer</a>
-              <script>
-                  function openServices() {
-                    location.href = "services.html";
-                    ga('send', 'event', 'Navigation', 'Click on See What We Offer Button [home]');
-                    console.log("See What We Offer Button Activated");
-                  }
-                  </script>
-            </div>
-          </div>
-      </div>
-  </div>
 <!-- GOOGLE MAPS-->
 <div class="row animated zoomIn google-maps center-align" style="animation-delay: 1.6s; animation-duration:2s; center-align centered center">
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12784.266186126904!2d144.275551!3d-36.768971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb10eff9a91bcad68!2sBreen+Street+Medical+Practice!5e0!3m2!1sen!2sau!4v1481116982305" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 <!-- /GOOGLE MAPS-->
-    </div>
+
+<div class="row" style="text-align:justify">
+  <div class="col s8 l8 m8 push-s2 push-l2 push-m2">
+    <h4> Feedback </h4>
+    <p class="flow-text"> We do appreciate feedback, whether it be of a positive or negative nature. If you have a problem, we would like to hear about it. We take concerns, suggestions, and complaints seriously. Feel free to list them and given the feedback to reception, place it in the suggestion box, or write to:<br><br>The Practice Manager<br>64 Breen St, Quarry Hill<br>VIC 3550<br><a style="color:black">a</a>dmin@breenstmedical.com.au<br>03 5444 0689</p>
   </div>
-
-
+</div>
 
 <!-- /CONTENTS -->
 
